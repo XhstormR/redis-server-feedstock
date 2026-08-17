@@ -73,31 +73,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `redis-server` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install redis-server
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install redis-server
 ```
 
-It is possible to list all of the versions of `redis-server` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add redis-server
+# for installing globally
+pixi global install redis-server
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `redis-server` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search redis-server --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search redis-server --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search redis-server --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -109,6 +151,8 @@ mamba repoquery whoneeds redis-server --channel conda-forge
 # List dependencies of `redis-server`:
 mamba repoquery depends redis-server --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
