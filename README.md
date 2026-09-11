@@ -48,6 +48,13 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/redis-server-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>osx_arm64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/redis-server-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -222,5 +229,6 @@ Feedstock Maintainers
 =====================
 
 * [@SimonBoothroyd](https://github.com/SimonBoothroyd/)
+* [@XhstormR](https://github.com/XhstormR/)
 * [@xhochy](https://github.com/xhochy/)
 
