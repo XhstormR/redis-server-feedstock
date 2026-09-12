@@ -25,7 +25,7 @@ requirements:
     - make
     # for built-in modules
     - cmake
-    - rust
+    - ${{ compiler('rust') }}
     - pip
     # redistimeseries' bundled libevent ships no configure; its autogen.sh needs autoreconf
     - autoconf
