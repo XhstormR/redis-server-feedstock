@@ -20,6 +20,8 @@ libboost_headers:
 - '1.88'
 openssl:
 - '3.5'
+rust_compiler:
+- rust
 target_platform:
 - linux-64
 zip_keys:
