@@ -12,3 +12,5 @@ bot:
   automerge: true
 conda_install_tool: pixi
 conda_build_tool: rattler-build
+build_platform:
+  linux_ppc64le: linux_64
