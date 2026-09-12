@@ -26,6 +26,9 @@ requirements:
     # for built-in modules
     - cmake
     - ${{ compiler('rust') }}
+    - cargo-bundle-licenses
+    # redisearch's src/CMakeLists.txt runs gen_command_info.py; readies' mk/main additionally
+    # gates the whole Makefile on `python3 -m pip --version`, so pip (not just python) is needed
     - pip
     # redistimeseries' bundled libevent ships no configure; its autogen.sh needs autoreconf
     - autoconf
@@ -52,8 +55,11 @@ tests:
         - lib/redis/modules/rejson.so
 
 about:
-  license: SSPL-1.0 OR LicenseRef-RSALv2
-  license_file: LICENSE.txt
+  license: SSPL-1.0 OR LicenseRef-RSALv2 OR AGPL-3.0-only
+  license_file:
+    - LICENSE.txt
+    - THIRDPARTY-redisjson.yml
+    - THIRDPARTY-redisearch.yml
   summary: Advanced key-value cache and store
   description: |
     Redis is an in-memory database that persists on disk. The data model
